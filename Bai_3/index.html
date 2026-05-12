@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 3 - Quy Đổi Tiền</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; padding: 50px; }
+        .card { 
+            max-width: 350px; 
+            margin: auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        }
+        h2 { color: #27ae60; text-align: center; margin-bottom: 5px; }
+        p.sub-title { text-align: center; color: #7f8c8d; font-size: 14px; margin-bottom: 20px; }
+        input { 
+            width: 100%; 
+            padding: 12px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            box-sizing: border-box; 
+            outline: none;
+        }
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #27ae60; 
+            color: white; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+        button:hover { background-color: #219150; }
+        #txtResult { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background: #f0fff4; 
+            border: 1px dashed #27ae60; 
+            border-radius: 8px; 
+            text-align: center; 
+            font-weight: bold; 
+            color: #27ae60;
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>QUY ĐỔI TIỀN</h2>
+        <p class="sub-title">Tỷ giá: 1 USD = 23.500 VND</p>
+        
+        <input type="number" id="usdValue" placeholder="Nhập số tiền USD...">
+        
+        <button id="btnExchange">Quy Đổi Ngay</button>
+
+        <div id="txtResult"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

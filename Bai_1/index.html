@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 1: Tính Tiền Lương</title>
+    <style>
+        /* Thêm một chút style cho đẹp giống các project trước của bạn */
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 400px; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        button { background-color: #e74c3c; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
+        button:hover { background-color: #c0392b; }
+        #txtKetQua { margin-top: 15px; font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tính Tiền Lương Nhân Viên</h2>
+        <p>Lương định mức: 100.000đ/ngày</p>
+        
+        <label for="soNgay">Số ngày làm việc:</label>
+        <input type="number" id="soNgay" placeholder="Nhập số ngày làm...">
+        
+        <button id="btnTinhTien">Tính Tổng Lương</button>
+        
+        <div id="txtKetQua"></div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
